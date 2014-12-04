@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0117744A007109A97F000001 /* libAudioFloatLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 011774440071097E7F000001 /* libAudioFloatLib.a */; };
+		0117744C00710CA77F000001 /* SampleAudioClip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0117744B00710CA77F000001 /* SampleAudioClip.cpp */; };
+		0117745000710DAB7F000001 /* AudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0117744E00710DAB7F000001 /* AudioEngine.h */; };
+		0117745100710DAB7F000001 /* AudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0117744F00710DAB7F000001 /* AudioEngine.cpp */; };
+		089C1680FE841241C02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		1A224C40FF42367911CA2CB7 /* AudioDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A224C3EFF42367911CA2CB7 /* AudioDevice.h */; };
+		1A224C41FF42367911CA2CB7 /* AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3FFF42367911CA2CB7 /* AudioDevice.cpp */; settings = {ATTRIBUTES = (); }; };
+		84B7BDB01079025C00E299A7 /* AudioDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A224C3EFF42367911CA2CB7 /* AudioDevice.h */; };
+		84B7BDB11079025C00E299A7 /* AudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0117744E00710DAB7F000001 /* AudioEngine.h */; };
+		84B7BDB21079025C00E299A7 /* DriverData.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BE70E92C65600B18780 /* DriverData.h */; };
+		84B7BDB31079025C00E299A7 /* ak_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BEB0E92C6B000B18780 /* ak_codec.h */; };
+		84B7BDB41079025C00E299A7 /* I2C.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BF00E92C6BB00B18780 /* I2C.h */; };
+		84B7BDB51079025C00E299A7 /* regs.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BF30E92C6C600B18780 /* regs.h */; };
+		84B7BDB61079025C00E299A7 /* Phase88.h in Headers */ = {isa = PBXBuildFile; fileRef = 8503AA160EC2509300EF75AE /* Phase88.h */; };
+		84B7BDB81079025C00E299A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		84B7BDBA1079025C00E299A7 /* AudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3FFF42367911CA2CB7 /* AudioDevice.cpp */; settings = {ATTRIBUTES = (); }; };
+		84B7BDBB1079025C00E299A7 /* AudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0117744F00710DAB7F000001 /* AudioEngine.cpp */; };
+		84B7BDBC1079025C00E299A7 /* I2C.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85B86BEF0E92C6BB00B18780 /* I2C.cpp */; };
+		84B7BDBD1079025C00E299A7 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850BB10C0E92D04E00BD103D /* misc.cpp */; };
+		84B7BDBE1079025C00E299A7 /* ak_codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8503A9D90EC24DC900EF75AE /* ak_codec.cpp */; };
+		84B7BDBF1079025C00E299A7 /* Phase88.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8503AA150EC2509300EF75AE /* Phase88.cpp */; };
+		84B7BDCD1079025D00E299A7 /* SampleAudioClip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0117744B00710CA77F000001 /* SampleAudioClip.cpp */; };
+		84B7BDD71079025D00E299A7 /* libAudioFloatLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7BDD41079025D00E299A7 /* libAudioFloatLib.a */; };
+		8503A9DA0EC24DC900EF75AE /* ak_codec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8503A9D90EC24DC900EF75AE /* ak_codec.cpp */; };
+		8503AA170EC2509300EF75AE /* Phase88.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8503AA150EC2509300EF75AE /* Phase88.cpp */; };
+		8503AA180EC2509300EF75AE /* Phase88.h in Headers */ = {isa = PBXBuildFile; fileRef = 8503AA160EC2509300EF75AE /* Phase88.h */; };
+		850BB10D0E92D04E00BD103D /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850BB10C0E92D04E00BD103D /* misc.cpp */; };
+		85B86BE80E92C65600B18780 /* DriverData.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BE70E92C65600B18780 /* DriverData.h */; };
+		85B86BEE0E92C6B000B18780 /* ak_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BEB0E92C6B000B18780 /* ak_codec.h */; };
+		85B86BF10E92C6BB00B18780 /* I2C.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85B86BEF0E92C6BB00B18780 /* I2C.cpp */; };
+		85B86BF20E92C6BB00B18780 /* I2C.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BF00E92C6BB00B18780 /* I2C.h */; };
+		85B86BF40E92C6C600B18780 /* regs.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B86BF30E92C6C600B18780 /* regs.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBundleTarget section */
+		089C1673FE841209C02AAC07 /* Envy24AudioDriver */ = {
+			isa = PBXBundleTarget;
+			buildConfigurationList = FCC4E42508B955B400AC9D19 /* Build configuration list for PBXBundleTarget "Envy24AudioDriver" */;
+			buildPhases = (
+				06AA1267FFB2110C11CA28AA /* ShellScript */,
+				089C1674FE841209C02AAC07 /* Headers */,
+				089C1675FE841209C02AAC07 /* Resources */,
+				089C1676FE841209C02AAC07 /* Sources */,
+				089C1677FE841209C02AAC07 /* Frameworks */,
+				089C1679FE841209C02AAC07 /* Rez */,
+				06AA1264FFB2107B11CA28AA /* ShellScript */,
+			);
+			dependencies = (
+				0117744D00710D0C7F000001 /* PBXTargetDependency */,
+			);
+			name = Envy24AudioDriver;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = Envy24AudioDriver;
+			productReference = 0B81C263FFB7832611CA28AA /* Envy24PCIAudioDriver.kext */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Envy24PCIAudioDriver</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.audio-evolution.driver.Envy24</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.20.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>Envy24PCIAudioDriver</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.audio-evolution.driver.Envy24</string>
+			<key>IOClass</key>
+			<string>com_audio_evolution_driver_Envy24</string>
+			<key>IOPCIMatch</key>
+			<string>0x17121412</string>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOAudioFamily</key>
+		<string>1.1fc6</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.0</string>
+	</dict>
+</dict>
+</plist>
+";
+		};
+/* End PBXBundleTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		84B7BDD51079025D00E299A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B7BDCA1079025D00E299A7;
+			remoteInfo = "libAudioFloatLib (Upgraded)";
+		};
+		FCC4E41808B955A500AC9D19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011774450071097E7F000001;
+			remoteInfo = libAudioFloatLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F55081007288EA11FF4F98 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+		011774440071097E7F000001 /* libAudioFloatLib.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libAudioFloatLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0117744B00710CA77F000001 /* SampleAudioClip.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleAudioClip.cpp; sourceTree = "<group>"; };
+		0117744E00710DAB7F000001 /* AudioEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioEngine.h; sourceTree = "<group>"; };
+		0117744F00710DAB7F000001 /* AudioEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioEngine.cpp; sourceTree = "<group>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B81C263FFB7832611CA28AA /* Envy24PCIAudioDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Envy24PCIAudioDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A224C3EFF42367911CA2CB7 /* AudioDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioDevice.h; sourceTree = "<group>"; };
+		1A224C3FFF42367911CA2CB7 /* AudioDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioDevice.cpp; sourceTree = "<group>"; };
+		84B7BDC81079025C00E299A7 /* Info-Envy24AudioDriver__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Envy24AudioDriver__Upgraded_.plist"; sourceTree = "<group>"; };
+		84B7BDC91079025D00E299A7 /* Envy24PCIAudioDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Envy24PCIAudioDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B7BDD41079025D00E299A7 /* libAudioFloatLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAudioFloatLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8503A9D90EC24DC900EF75AE /* ak_codec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ak_codec.cpp; sourceTree = "<group>"; };
+		8503AA150EC2509300EF75AE /* Phase88.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Phase88.cpp; sourceTree = "<group>"; };
+		8503AA160EC2509300EF75AE /* Phase88.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Phase88.h; sourceTree = "<group>"; };
+		850BB10C0E92D04E00BD103D /* misc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = misc.cpp; sourceTree = "<group>"; };
+		85B86BE70E92C65600B18780 /* DriverData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverData.h; sourceTree = "<group>"; };
+		85B86BEB0E92C6B000B18780 /* ak_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ak_codec.h; sourceTree = "<group>"; };
+		85B86BEF0E92C6BB00B18780 /* I2C.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = I2C.cpp; sourceTree = "<group>"; };
+		85B86BF00E92C6BB00B18780 /* I2C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I2C.h; sourceTree = "<group>"; };
+		85B86BF30E92C6C600B18780 /* regs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regs.h; sourceTree = "<group>"; };
+		FCE7239808C89FB200026E23 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011774480071097E7F000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1677FE841209C02AAC07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0117744A007109A97F000001 /* libAudioFloatLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDC01079025C00E299A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7BDD71079025D00E299A7 /* libAudioFloatLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDCE1079025D00E299A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Envy24AudioDriver */ = {
+			isa = PBXGroup;
+			children = (
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+				247142CAFF3F8F9811CA285C /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				00F55081007288EA11FF4F98 /* Kernel.framework */,
+				84B7BDC81079025C00E299A7 /* Info-Envy24AudioDriver__Upgraded_.plist */,
+			);
+			name = Envy24AudioDriver;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B81C263FFB7832611CA28AA /* Envy24PCIAudioDriver.kext */,
+				011774440071097E7F000001 /* libAudioFloatLib.a */,
+				84B7BDC91079025D00E299A7 /* Envy24PCIAudioDriver.kext */,
+				84B7BDD41079025D00E299A7 /* libAudioFloatLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8503AA150EC2509300EF75AE /* Phase88.cpp */,
+				8503AA160EC2509300EF75AE /* Phase88.h */,
+				8503A9D90EC24DC900EF75AE /* ak_codec.cpp */,
+				850BB10C0E92D04E00BD103D /* misc.cpp */,
+				85B86BF30E92C6C600B18780 /* regs.h */,
+				85B86BEF0E92C6BB00B18780 /* I2C.cpp */,
+				85B86BF00E92C6BB00B18780 /* I2C.h */,
+				85B86BEB0E92C6B000B18780 /* ak_codec.h */,
+				85B86BE70E92C65600B18780 /* DriverData.h */,
+				FCE7239808C89FB200026E23 /* install.sh */,
+				1A224C3EFF42367911CA2CB7 /* AudioDevice.h */,
+				1A224C3FFF42367911CA2CB7 /* AudioDevice.cpp */,
+				0117744E00710DAB7F000001 /* AudioEngine.h */,
+				0117744F00710DAB7F000001 /* AudioEngine.cpp */,
+				0117744B00710CA77F000001 /* SampleAudioClip.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		011774460071097E7F000001 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1674FE841209C02AAC07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A224C40FF42367911CA2CB7 /* AudioDevice.h in Headers */,
+				0117745000710DAB7F000001 /* AudioEngine.h in Headers */,
+				85B86BE80E92C65600B18780 /* DriverData.h in Headers */,
+				85B86BEE0E92C6B000B18780 /* ak_codec.h in Headers */,
+				85B86BF20E92C6BB00B18780 /* I2C.h in Headers */,
+				85B86BF40E92C6C600B18780 /* regs.h in Headers */,
+				8503AA180EC2509300EF75AE /* Phase88.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDAF1079025C00E299A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7BDB01079025C00E299A7 /* AudioDevice.h in Headers */,
+				84B7BDB11079025C00E299A7 /* AudioEngine.h in Headers */,
+				84B7BDB21079025C00E299A7 /* DriverData.h in Headers */,
+				84B7BDB31079025C00E299A7 /* ak_codec.h in Headers */,
+				84B7BDB41079025C00E299A7 /* I2C.h in Headers */,
+				84B7BDB51079025C00E299A7 /* regs.h in Headers */,
+				84B7BDB61079025C00E299A7 /* Phase88.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDCB1079025D00E299A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLibraryTarget section */
+		011774450071097E7F000001 /* libAudioFloatLib */ = {
+			isa = PBXLibraryTarget;
+			buildConfigurationList = FCC4E42108B955B400AC9D19 /* Build configuration list for PBXLibraryTarget "libAudioFloatLib" */;
+			buildPhases = (
+				011774460071097E7F000001 /* Headers */,
+				011774470071097E7F000001 /* Sources */,
+				011774480071097E7F000001 /* Frameworks */,
+				011774490071097E7F000001 /* Rez */,
+			);
+			dependencies = (
+			);
+			name = libAudioFloatLib;
+			productInstallPath = /usr/local/lib;
+			productName = libAudioFloatLib;
+			productReference = 011774440071097E7F000001 /* libAudioFloatLib.a */;
+		};
+/* End PBXLibraryTarget section */
+
+/* Begin PBXNativeTarget section */
+		84B7BDAB1079025C00E299A7 /* Envy24AudioDriver (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B7BDC41079025C00E299A7 /* Build configuration list for PBXNativeTarget "Envy24AudioDriver (Upgraded)" */;
+			buildPhases = (
+				84B7BDAE1079025C00E299A7 /* ShellScript */,
+				84B7BDAF1079025C00E299A7 /* Headers */,
+				84B7BDB71079025C00E299A7 /* Resources */,
+				84B7BDB91079025C00E299A7 /* Sources */,
+				84B7BDC01079025C00E299A7 /* Frameworks */,
+				84B7BDC21079025C00E299A7 /* Rez */,
+				84B7BDC31079025C00E299A7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B7BDD61079025D00E299A7 /* PBXTargetDependency */,
+			);
+			name = "Envy24AudioDriver (Upgraded)";
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = Envy24AudioDriver;
+			productReference = 84B7BDC91079025D00E299A7 /* Envy24PCIAudioDriver.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+		84B7BDCA1079025D00E299A7 /* libAudioFloatLib (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B7BDD01079025D00E299A7 /* Build configuration list for PBXNativeTarget "libAudioFloatLib (Upgraded)" */;
+			buildPhases = (
+				84B7BDCB1079025D00E299A7 /* Headers */,
+				84B7BDCC1079025D00E299A7 /* Sources */,
+				84B7BDCE1079025D00E299A7 /* Frameworks */,
+				84B7BDCF1079025D00E299A7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libAudioFloatLib (Upgraded)";
+			productInstallPath = /usr/local/lib;
+			productName = libAudioFloatLib;
+			productReference = 84B7BDD41079025D00E299A7 /* libAudioFloatLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FCC4E42908B955B400AC9D19 /* Build configuration list for PBXProject "Envy24_64bit_Driver" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 0;
+			mainGroup = 089C166AFE841209C02AAC07 /* Envy24AudioDriver */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B7BDAB1079025C00E299A7 /* Envy24AudioDriver (Upgraded) */,
+				84B7BDCA1079025D00E299A7 /* libAudioFloatLib (Upgraded) */,
+				089C1673FE841209C02AAC07 /* Envy24AudioDriver */,
+				011774450071097E7F000001 /* libAudioFloatLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		089C1675FE841209C02AAC07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089C1680FE841241C02AAC07 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDB71079025C00E299A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7BDB81079025C00E299A7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		011774490071097E7F000001 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1679FE841209C02AAC07 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDC21079025C00E299A7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDCF1079025D00E299A7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06AA1264FFB2107B11CA28AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPostprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi\nfind \"${BUILT_PRODUCTS_DIR}/Envy24PCIAudioDriver.kext\" -type d -exec /bin/chmod 0755 {} \\;\nfind \"${BUILT_PRODUCTS_DIR}/Envy24PCIAudioDriver.kext\" -type f -exec /bin/chmod 0644 {} \\;\ncp ${SRCROOT}/install.sh ${BUILT_PRODUCTS_DIR}";
+		};
+		06AA1267FFB2110C11CA28AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPreprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		84B7BDAE1079025C00E299A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPreprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		84B7BDC31079025C00E299A7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPostprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi\nfind \"${BUILT_PRODUCTS_DIR}/Envy24PCIAudioDriver.kext\" -type d -exec /bin/chmod 0755 {} \\;\nfind \"${BUILT_PRODUCTS_DIR}/Envy24PCIAudioDriver.kext\" -type f -exec /bin/chmod 0644 {} \\;\ncp ${SRCROOT}/install.sh ${BUILT_PRODUCTS_DIR}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011774470071097E7F000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0117744C00710CA77F000001 /* SampleAudioClip.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		089C1676FE841209C02AAC07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A224C41FF42367911CA2CB7 /* AudioDevice.cpp in Sources */,
+				0117745100710DAB7F000001 /* AudioEngine.cpp in Sources */,
+				85B86BF10E92C6BB00B18780 /* I2C.cpp in Sources */,
+				850BB10D0E92D04E00BD103D /* misc.cpp in Sources */,
+				8503A9DA0EC24DC900EF75AE /* ak_codec.cpp in Sources */,
+				8503AA170EC2509300EF75AE /* Phase88.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDB91079025C00E299A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7BDBA1079025C00E299A7 /* AudioDevice.cpp in Sources */,
+				84B7BDBB1079025C00E299A7 /* AudioEngine.cpp in Sources */,
+				84B7BDBC1079025C00E299A7 /* I2C.cpp in Sources */,
+				84B7BDBD1079025C00E299A7 /* misc.cpp in Sources */,
+				84B7BDBE1079025C00E299A7 /* ak_codec.cpp in Sources */,
+				84B7BDBF1079025C00E299A7 /* Phase88.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7BDCC1079025D00E299A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7BDCD1079025D00E299A7 /* SampleAudioClip.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0117744D00710D0C7F000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011774450071097E7F000001 /* libAudioFloatLib */;
+			targetProxy = FCC4E41808B955A500AC9D19 /* PBXContainerItemProxy */;
+		};
+		84B7BDD61079025D00E299A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B7BDCA1079025D00E299A7 /* libAudioFloatLib (Upgraded) */;
+			targetProxy = 84B7BDD51079025D00E299A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B7BDC51079025C00E299A7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "\"\"";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Envy24AudioDriver__Upgraded_.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Deployment\"",
+				);
+				MODULE_IOKIT = YES;
+				MODULE_NAME = "com.audio-evolution.driver.Envy24";
+				MODULE_VERSION = 0.6.4;
+				OTHER_CFLAGS = DEBUG;
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Envy24PCIAudioDriver;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		84B7BDC61079025C00E299A7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "MACOSX_DEPLOYMENT_TARGET=10.4";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Envy24AudioDriver__Upgraded_.plist";
+				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Deployment\"",
+				);
+				MODULE_IOKIT = YES;
+				MODULE_NAME = "com.audio-evolution.Envy24Audio";
+				MODULE_VERSION = 0.6.4;
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Envy24PCIAudioDriver;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		84B7BDC71079025C00E299A7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Envy24AudioDriver__Upgraded_.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Deployment\"",
+				);
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.MyCompany.driver.SamplePCIAudioDriver;
+				MODULE_VERSION = 1.0.0d1;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SamplePCIAudioDriver;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Default;
+		};
+		84B7BDD11079025D00E299A7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					KERNEL,
+					KERNEL_PRIVATE,
+					DRIVER_PRIVATE,
+					APPLE,
+					NeXT,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers/bsd",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-fcheck-new",
+					"-findirect-virtual-calls",
+					"-static",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFloatLib;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		84B7BDD21079025D00E299A7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					KERNEL,
+					KERNEL_PRIVATE,
+					DRIVER_PRIVATE,
+					APPLE,
+					NeXT,
+					"MACOSX_DEPLOYMENT_TARGET=10.4",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers/bsd",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-fcheck-new",
+					"-findirect-virtual-calls",
+					"-static",
+					"-mmacosx-version-min=10.4",
+					"-isystem",
+					/Developer/SDKs/MacOSX10.4u.sdk,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFloatLib;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		84B7BDD31079025D00E299A7 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					KERNEL,
+					KERNEL_PRIVATE,
+					DRIVER_PRIVATE,
+					APPLE,
+					NeXT,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers/bsd",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-fcheck-new",
+					"-findirect-virtual-calls",
+					"-static",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFloatLib;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		FCC4E42208B955B400AC9D19 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				HEADER_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers/bsd",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-x",
+					"c++",
+					"-fno-rtti",
+					"-fno-exceptions",
+					"-fcheck-new",
+					"-findirect-virtual-calls",
+					"-static",
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+					"-DDRIVER_PRIVATE",
+					"-DAPPLE",
+					"-DNeXT",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libAudioFloatLib.a;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		FCC4E42308B955B400AC9D19 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				HEADER_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers/bsd",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-x",
+					"c++",
+					"-fno-rtti",
+					"-fno-exceptions",
+					"-fcheck-new",
+					"-findirect-virtual-calls",
+					"-static",
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+					"-DDRIVER_PRIVATE",
+					"-DAPPLE",
+					"-DNeXT",
+					"-DMACOSX_DEPLOYMENT_TARGET=10.4",
+					"-mmacosx-version-min=10.4",
+					"-isystem",
+					/Developer/SDKs/MacOSX10.4u.sdk,
+				);
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libAudioFloatLib.a;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		FCC4E42408B955B400AC9D19 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				HEADER_SEARCH_PATHS = (
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Headers/bsd",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-nostdinc",
+					"-finline",
+					"-fno-keep-inline-functions",
+					"-force_cpusubtype_ALL",
+					"-mlong-branch",
+					"-x",
+					"c++",
+					"-fno-rtti",
+					"-fno-exceptions",
+					"-fcheck-new",
+					"-findirect-virtual-calls",
+					"-static",
+					"-DKERNEL",
+					"-DKERNEL_PRIVATE",
+					"-DDRIVER_PRIVATE",
+					"-DAPPLE",
+					"-DNeXT",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOL_FLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libAudioFloatLib.a;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		FCC4E42608B955B400AC9D19 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = "com.audio-evolution.driver.Envy24";
+				MODULE_VERSION = 0.6.4;
+				OTHER_CFLAGS = (
+					"-D",
+					DEBUG,
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Envy24PCIAudioDriver;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		FCC4E42708B955B400AC9D19 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				HEADER_SEARCH_PATHS = "";
+				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = "com.audio-evolution.Envy24Audio";
+				MODULE_VERSION = 0.6.4;
+				OTHER_CFLAGS = (
+					"-DMACOSX_DEPLOYMENT_TARGET=10.4",
+					"-mmacosx-version-min=10.4",
+					"-isystem",
+					/Developer/SDKs/MacOSX10.4u.sdk,
+				);
+				OTHER_LDFLAGS = (
+					"-mmacosx-version-min=10.4",
+					"-isysroot",
+					/Developer/SDKs/MacOSX10.4u.sdk,
+					"-Wl,-syslibroot,/Developer/SDKs/MacOSX10.4u.sdk",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Envy24PCIAudioDriver;
+				SECTORDER_FLAGS = "";
+				USE_GCC3_PFE_SUPPORT = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		FCC4E42808B955B400AC9D19 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.MyCompany.driver.SamplePCIAudioDriver;
+				MODULE_VERSION = 1.0.0d1;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = SamplePCIAudioDriver;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Default;
+		};
+		FCC4E42A08B955B400AC9D19 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_VARIANTS = normal;
+				GCC_MODEL_TUNING = "";
+				INFOPLIST_PREPROCESS = NO;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Development;
+		};
+		FCC4E42B08B955B400AC9D19 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+				);
+				GCC_MODEL_TUNING = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Deployment;
+		};
+		FCC4E42C08B955B400AC9D19 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_MODEL_TUNING = "";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B7BDC41079025C00E299A7 /* Build configuration list for PBXNativeTarget "Envy24AudioDriver (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B7BDC51079025C00E299A7 /* Development */,
+				84B7BDC61079025C00E299A7 /* Deployment */,
+				84B7BDC71079025C00E299A7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		84B7BDD01079025D00E299A7 /* Build configuration list for PBXNativeTarget "libAudioFloatLib (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B7BDD11079025D00E299A7 /* Development */,
+				84B7BDD21079025D00E299A7 /* Deployment */,
+				84B7BDD31079025D00E299A7 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		FCC4E42108B955B400AC9D19 /* Build configuration list for PBXLibraryTarget "libAudioFloatLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC4E42208B955B400AC9D19 /* Development */,
+				FCC4E42308B955B400AC9D19 /* Deployment */,
+				FCC4E42408B955B400AC9D19 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		FCC4E42508B955B400AC9D19 /* Build configuration list for PBXBundleTarget "Envy24AudioDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC4E42608B955B400AC9D19 /* Development */,
+				FCC4E42708B955B400AC9D19 /* Deployment */,
+				FCC4E42808B955B400AC9D19 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		FCC4E42908B955B400AC9D19 /* Build configuration list for PBXProject "Envy24_64bit_Driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC4E42A08B955B400AC9D19 /* Development */,
+				FCC4E42B08B955B400AC9D19 /* Deployment */,
+				FCC4E42C08B955B400AC9D19 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
